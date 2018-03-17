@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09831E480FB60C0C3B533161 /* Pods_FKAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041D0B2A7CC8489FE458DD9F /* Pods_FKAlert.framework */; };
 		A6F16839205D222400B11BD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F16838205D222400B11BD0 /* AppDelegate.swift */; };
 		A6F1683B205D222400B11BD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F1683A205D222400B11BD0 /* ViewController.swift */; };
 		A6F1683E205D222400B11BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F1683C205D222400B11BD0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041D0B2A7CC8489FE458DD9F /* Pods_FKAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FKAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E78CF10D6AB31A4E48E7FA4 /* Pods-FKAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-FKAlert/Pods-FKAlert.release.xcconfig"; sourceTree = "<group>"; };
+		2E2C16E24A4FB4B00FB2E70B /* Pods-FKAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FKAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FKAlert/Pods-FKAlert.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F16835205D222400B11BD0 /* FKAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FKAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6F16838205D222400B11BD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6F1683A205D222400B11BD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09831E480FB60C0C3B533161 /* Pods_FKAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A52CD6D0939B3D20568BE2AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E2C16E24A4FB4B00FB2E70B /* Pods-FKAlert.debug.xcconfig */,
+				0E78CF10D6AB31A4E48E7FA4 /* Pods-FKAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6F1682C205D222400B11BD0 = {
 			isa = PBXGroup;
 			children = (
 				A6F16837205D222400B11BD0 /* FKAlert */,
 				A6F16836205D222400B11BD0 /* Products */,
+				A52CD6D0939B3D20568BE2AB /* Pods */,
+				CC1038C03924C1AC696AC799 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = FKAlert;
 			sourceTree = "<group>";
 		};
+		CC1038C03924C1AC696AC799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				041D0B2A7CC8489FE458DD9F /* Pods_FKAlert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6F16847205D222400B11BD0 /* Build configuration list for PBXNativeTarget "FKAlert" */;
 			buildPhases = (
+				B09EC84B74B82921F4E9B577 /* [CP] Check Pods Manifest.lock */,
 				A6F16831205D222400B11BD0 /* Sources */,
 				A6F16832205D222400B11BD0 /* Frameworks */,
 				A6F16833205D222400B11BD0 /* Resources */,
+				5232B9F178FD2472CEC3CA29 /* [CP] Embed Pods Frameworks */,
+				3EAFBE237CA5AD2E4DF645B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3EAFBE237CA5AD2E4DF645B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKAlert/Pods-FKAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5232B9F178FD2472CEC3CA29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FKAlert/Pods-FKAlert-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FKAlert/Pods-FKAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09EC84B74B82921F4E9B577 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FKAlert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6F16831205D222400B11BD0 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		A6F16848205D222400B11BD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2C16E24A4FB4B00FB2E70B /* Pods-FKAlert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +369,7 @@
 		};
 		A6F16849205D222400B11BD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E78CF10D6AB31A4E48E7FA4 /* Pods-FKAlert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
