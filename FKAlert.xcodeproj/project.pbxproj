@@ -13,6 +13,10 @@
 		A6F1683E205D222400B11BD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F1683C205D222400B11BD0 /* Main.storyboard */; };
 		A6F16840205D222400B11BD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6F1683F205D222400B11BD0 /* Assets.xcassets */; };
 		A6F16843205D222400B11BD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6F16841205D222400B11BD0 /* LaunchScreen.storyboard */; };
+		A6F16858205D258B00B11BD0 /* FKAlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F16854205D258B00B11BD0 /* FKAlertActionView.swift */; };
+		A6F16859205D258B00B11BD0 /* FKAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F16855205D258B00B11BD0 /* FKAlertController.swift */; };
+		A6F1685A205D258B00B11BD0 /* FKAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F16856205D258B00B11BD0 /* FKAlertView.swift */; };
+		A6F1685B205D258B00B11BD0 /* FKActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F16857205D258B00B11BD0 /* FKActionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A6F1683F205D222400B11BD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6F16842205D222400B11BD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6F16844205D222400B11BD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6F16854205D258B00B11BD0 /* FKAlertActionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKAlertActionView.swift; sourceTree = "<group>"; };
+		A6F16855205D258B00B11BD0 /* FKAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKAlertController.swift; sourceTree = "<group>"; };
+		A6F16856205D258B00B11BD0 /* FKAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKAlertView.swift; sourceTree = "<group>"; };
+		A6F16857205D258B00B11BD0 /* FKActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FKActionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,7 @@
 		A6F1682C205D222400B11BD0 = {
 			isa = PBXGroup;
 			children = (
-				A6F16837205D222400B11BD0 /* FKAlert */,
+				A6F16837205D222400B11BD0 /* FKAlertDemo */,
 				A6F16836205D222400B11BD0 /* Products */,
 				A52CD6D0939B3D20568BE2AB /* Pods */,
 				CC1038C03924C1AC696AC799 /* Frameworks */,
@@ -67,9 +75,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6F16837205D222400B11BD0 /* FKAlert */ = {
+		A6F16837205D222400B11BD0 /* FKAlertDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A6F16853205D258B00B11BD0 /* FKAlert */,
 				A6F16838205D222400B11BD0 /* AppDelegate.swift */,
 				A6F1683A205D222400B11BD0 /* ViewController.swift */,
 				A6F1683C205D222400B11BD0 /* Main.storyboard */,
@@ -77,8 +86,19 @@
 				A6F16841205D222400B11BD0 /* LaunchScreen.storyboard */,
 				A6F16844205D222400B11BD0 /* Info.plist */,
 			);
-			path = FKAlert;
+			path = FKAlertDemo;
 			sourceTree = "<group>";
+		};
+		A6F16853205D258B00B11BD0 /* FKAlert */ = {
+			isa = PBXGroup;
+			children = (
+				A6F16854205D258B00B11BD0 /* FKAlertActionView.swift */,
+				A6F16855205D258B00B11BD0 /* FKAlertController.swift */,
+				A6F16856205D258B00B11BD0 /* FKAlertView.swift */,
+				A6F16857205D258B00B11BD0 /* FKActionSheet.swift */,
+			);
+			path = FKAlert;
+			sourceTree = SOURCE_ROOT;
 		};
 		CC1038C03924C1AC696AC799 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -217,8 +237,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F1685A205D258B00B11BD0 /* FKAlertView.swift in Sources */,
+				A6F16858205D258B00B11BD0 /* FKAlertActionView.swift in Sources */,
 				A6F1683B205D222400B11BD0 /* ViewController.swift in Sources */,
 				A6F16839205D222400B11BD0 /* AppDelegate.swift in Sources */,
+				A6F1685B205D258B00B11BD0 /* FKActionSheet.swift in Sources */,
+				A6F16859205D258B00B11BD0 /* FKAlertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
